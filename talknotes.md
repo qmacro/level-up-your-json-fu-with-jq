@@ -177,8 +177,6 @@ With a quick pipe through `jq` like this `jq '.' data.json` things would look a 
 
 The `.` is the identity filter (yes, [that identity mechanism](https://en.wikipedia.org/wiki/Identity_function), and yes, `jq` is a functional language at its heart), which just produces whatever it's given. And so we must realise that it's not the `.` that is performing the pretty print, it's `jq`'s default approach to output, which is to not only to emit JSON values as output, but to pretty print them too.
 
-> If no actual `jq` filter, function or language element is supplied, then the identity function is assumed. In other words `jq data.json` would have sufficed, but that's really an edge case and it's better practice to be explicit.
-
 Here are some more single-line expression examples:
 
 > All of these can be executed with `btp --format json ... | jq ...` but here they're shown as first loading the JSON into files, so we have the files of JSON here in this repo too to try out.
