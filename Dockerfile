@@ -51,6 +51,6 @@ RUN adduser \
 USER $USERNAME
 WORKDIR /home/$USERNAME
 ENV TERM xterm-256color
-COPY samples/ .
+COPY . .
 
 CMD ["bash"]
