@@ -354,7 +354,7 @@ cat threestrings.dat \
 
 > Taking [TIMTOWTDI](https://www.urbandictionary.com/define.php?term=TIMTOWDI) into account, one could achieve the character count in a different way, like this: `{words: ., chars: .|add|length}`
 
-## Level 2 - some more realistic input data
+### Level 2 - some more realistic input data
 
 Let's start to work with a more realistic data set, but still simple enough to quickly comprehend and use in this introductory session. The data is based loosely on the [BTPcon 2023](https://www.btpcon.org) session information, is contained in [btpcon.json](btpcon.json) and looks like this (content reduced for brevity):
 
@@ -547,7 +547,6 @@ This gives us:
 "Lehmann, Fabian"
 "Adams, DJ"
 ```
-
 
 ## Further reading
 
