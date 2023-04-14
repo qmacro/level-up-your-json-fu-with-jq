@@ -469,7 +469,9 @@ This should add a new property to each of the session objects (only the first fe
 
 > We used `map` here to preserve the shape of the value of the `sessions` property, which was an array.
 
-Now we can use that new property to group by (`group_by(.when)`) and not forgetting to then also reverse the groups (`reverse`), as we want "morning" before "afternoon" despite their natural alphabetic sort order. Finally we convert the two "morning" and "afternoon" sub arrays that resulted from the call to `group_by` into a list of two objects, constructing the objects on the fly while mapping over those sub arrays (`map({ ... })`). These objects have one property each, where the key is either `"morning"` or `"afternoon"`, taken from the value of the `when` property of the first object in the sub array (`first.when`) and the value is the list of `title` properties from the objects in that same sub array (`map(.title)`):
+Now we can use that new property to group by (`group_by(.when)`) and not forgetting to then also reverse the groups (`reverse`), as we want "morning" before "afternoon" despite their natural alphabetic sort order.
+
+Finally we convert the two "morning" and "afternoon" sub arrays that resulted from the call to `group_by` into a list of two objects, constructing the objects on the fly while mapping over those sub arrays (`map({ ... })`). These objects have one property each, where the key is either `"morning"` or `"afternoon"`, taken from the value of the `when` property of the first object in the sub array (`first.when`) and the value is the list of `title` properties from the objects in that same sub array (`map(.title)`):
 
 ```shell
 cat btpcon.json \
