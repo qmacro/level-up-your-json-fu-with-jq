@@ -25,6 +25,19 @@
       "domain": "us10.hana.ondemand.com",
       "isMainDataCenter": true,
       "geoAccess": "BACKWARD_COMPLIANT_EU_ACCESS"
+    },
+    {
+      "name": "cf-zz09-plural-z-alpha",
+      "displayName": "Betelgeuse - Azure",
+      "region": "zz09",
+      "environment": "cloudfoundry",
+      "iaasProvider": "AZURE",
+      "supportsTrial": true,
+      "provisioningServiceUrl": "https://provisioning-service.cfapps.zz09.hana.ondemand.com",
+      "saasRegistryServiceUrl": "https://saas-manager.cfapps.zz09.hana.ondemand.com",
+      "domain": "zz09.hana.ondemand.com",
+      "isMainDataCenter": true,
+      "geoAccess": "BACKWARD_COMPLIANT_EU_ACCESS"
     }
   ]
 }
