@@ -127,6 +127,8 @@ Not only that, but while `jq` by default expects to receive JSON values as input
 
 Often, what you want to do with `jq` is simple enough to describe in a short expression, so invoking `jq` on the command line with that expression as part of the invocation is common.
 
+### Identity and pretty printing
+
 The simplest `jq` expression is also arguably the most common, and it's used to pretty print otherwise ugly or impenetrable JSON output.
 
 The JSON output from most btp CLI commands is quite neat, so here's a made-up scenario for now. Imagine you had a file `data.json` containing some JSON output that had no whitespace, and looked like this in your editor:
@@ -176,6 +178,8 @@ With a quick pipe through `jq` like this `jq '.' data.json` things would look a 
 ```
 
 The `.` is the identity filter (yes, [that identity mechanism](https://en.wikipedia.org/wiki/Identity_function), and yes, `jq` is a functional language at its heart), which just produces whatever it's given. And so we must realise that it's not the `.` that is performing the pretty print, it's `jq`'s default approach to output, which is to not only to emit JSON values as output, but to pretty print them too.
+
+### Single-line expression examples
 
 Here are some more single-line expression examples:
 
