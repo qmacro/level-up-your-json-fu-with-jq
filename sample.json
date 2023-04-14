@@ -1,0 +1,24 @@
+{
+  "datacenters": [
+    {
+      "name": "cf-ap21",
+      "displayName": "Singapore - Azure",
+      "region": "ap21",
+      "environment": "cloudfoundry",
+      "iaasProvider": "AZURE",
+      "supportsTrial": true,
+      "domain": "ap21.hana.ondemand.com",
+      "isMainDataCenter": true
+    },
+    {
+      "name": "cf-us10",
+      "displayName": "US East (VA) - AWS",
+      "region": "us10",
+      "environment": "cloudfoundry",
+      "iaasProvider": "AWS",
+      "supportsTrial": true,
+      "domain": "us10.hana.ondemand.com",
+      "isMainDataCenter": true
+    }
+  ]
+}

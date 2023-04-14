@@ -1,0 +1,105 @@
+{
+  "name": "BTPcon 2023",
+  "sessions": [
+    {
+      "title": "Hands-On: CAP Erweiterungen für SAP S/4HANA auf SAP BTP mit SAP Event Mesh und SAP Private Link service",
+      "speaker": "Max Streifeneder",
+      "type": "hands-on",
+      "duration": 150,
+      "starttime": "0930"
+    },
+    {
+      "title": "Datenverbund von Google BigQuery zu SAP Data Warehouse Cloud / SAP Analytics Cloud",
+      "speaker": "Harutyun Ter-Minasyan",
+      "type": "hands-on",
+      "duration": 150,
+      "starttime": "1400"
+    },
+    {
+      "title": "RISE with BTP: Erfahrungen aus SAP S/4 HANA-Transformationen mit einem integrierten Einsatz der BTP",
+      "speaker": "Thorsten Düvelmeyer",
+      "type": "talk",
+      "duration": 45,
+      "starttime": "0930"
+    },
+    {
+      "title": "BTP Services with a Cloud Native Application",
+      "speaker": "Mohamed Oussman",
+      "type": "talk",
+      "duration": 45,
+      "starttime": "0930"
+    },
+    {
+      "title": "Prozessgetriebene Softwareentwicklung auf der BTP mit BPMN und CAP",
+      "speaker": "Volker Buzek",
+      "type": "talk",
+      "duration": 45,
+      "starttime": "1025"
+    },
+    {
+      "title": "SAP BTP – Cloud Services unter Kontrolle",
+      "speaker": "Mike Zaschka",
+      "type": "talk",
+      "duration": 45,
+      "starttime": "1025"
+    },
+    {
+      "title": "Vom ersten App-Deployment zu CI/CD mit Cloud Foundry",
+      "speaker": "Nicolai Schönteich",
+      "type": "talk",
+      "duration": 45,
+      "starttime": "1120"
+    },
+    {
+      "title": "Prozessdigitalisierung mit SAP Build Process Automation",
+      "speaker": "Eike Bergmann",
+      "type": "talk",
+      "duration": 45,
+      "starttime": "1120"
+    },
+    {
+      "title": "Deconstructed: CAP on SAP BTP, Kyma Runtime",
+      "speaker": "Max Streifeneder",
+      "type": "talk",
+      "duration": 45,
+      "starttime": "1215"
+    },
+    {
+      "title": "SAP Schnittstellenmanagement & Integration Excellence",
+      "speaker": "Adam Kiwon",
+      "type": "talk",
+      "duration": 45,
+      "starttime": "1215"
+    },
+    { "title": "Entwicklung von Multi-Tenant Software as a Service Applikationen in SAP BTP",
+      "speaker": "Alper Dedeoglu",
+      "type": "talk",
+      "duration": 45,
+      "starttime": "1400"
+    },
+    { "title": "Integration-Hub auf der BTP - Eine Symbiose aus CAP und SAP Cloud SDK",
+      "speaker": "Cedric Heisel",
+      "type": "talk",
+      "duration": 45,
+      "starttime": "1400"
+    },
+    { "title": "WIP: ChatGPT mit SAP Best Practice Content",
+      "speaker": "Gregor Wolf",
+      "type": "talk",
+      "duration": 45,
+      "starttime": "1455"
+    },
+    { "title": "Wie finden die verschiedenen Suite Qualities ihren Weg zu den SAP-Anwender:innen",
+      "speaker": "Fabian Lehmann",
+      "type": "talk",
+      "duration": 45,
+      "starttime": "1550"
+    },
+    { "title": "Level up your JSON fu with jq",
+      "speaker": "DJ Adams",
+      "type": "talk",
+      "duration": 45,
+      "starttime": "1550"
+    }
+  ]
+}

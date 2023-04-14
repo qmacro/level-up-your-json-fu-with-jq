@@ -1,0 +1,30 @@
+{
+  "datacenters": [
+    {
+      "name": "cf-ap21",
+      "displayName": "Singapore - Azure",
+      "region": "ap21",
+      "environment": "cloudfoundry",
+      "iaasProvider": "AZURE",
+      "supportsTrial": true,
+      "provisioningServiceUrl": "https://provisioning-service.cfapps.ap21.hana.ondemand.com",
+      "saasRegistryServiceUrl": "https://saas-manager.cfapps.ap21.hana.ondemand.com",
+      "domain": "ap21.hana.ondemand.com",
+      "isMainDataCenter": true,
+      "geoAccess": "BACKWARD_COMPLIANT_EU_ACCESS"
+    },
+    {
+      "name": "cf-us10",
+      "displayName": "US East (VA) - AWS",
+      "region": "us10",
+      "environment": "cloudfoundry",
+      "iaasProvider": "AWS",
+      "supportsTrial": true,
+      "provisioningServiceUrl": "https://provisioning-service.cfapps.us10.hana.ondemand.com",
+      "saasRegistryServiceUrl": "https://saas-manager.cfapps.us10.hana.ondemand.com",
+      "domain": "us10.hana.ondemand.com",
+      "isMainDataCenter": true,
+      "geoAccess": "BACKWARD_COMPLIANT_EU_ACCESS"
+    }
+  ]
+}

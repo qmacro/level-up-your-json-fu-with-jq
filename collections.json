@@ -1,0 +1,173 @@
+[
+  {
+    "name": "Business_Application_Studio_Administrator",
+    "description": "Allows administrators to manage (export and delete) user data.",
+    "roleReferences": [
+      {
+        "roleTemplateAppId": "us10-app-studio!z0804",
+        "roleTemplateName": "Business_Application_Studio_Administrator",
+        "name": "Administrator",
+        "description": "Allows administrators to manage (export and delete) user data."
+      }
+    ],
+    "isReadOnly": true
+  },
+  {
+    "name": "Business_Application_Studio_Developer",
+    "description": "Allows developers to load and develop applications using SAP Business Application Studio.",
+    "roleReferences": [
+      {
+        "roleTemplateAppId": "us10-app-studio!z0804",
+        "roleTemplateName": "Business_Application_Studio_Developer",
+        "name": "Developer",
+        "description": "Allows developers to load and develop applications using SAP Business Application Studio."
+      }
+    ],
+    "isReadOnly": true
+  },
+  {
+    "name": "Business_Application_Studio_Extension_Deployer",
+    "description": "Allows extension developers to deploy simple extensions.",
+    "roleReferences": [
+      {
+        "roleTemplateAppId": "us10-app-studio!z0804",
+        "roleTemplateName": "Business_Application_Studio_Extension_Deployer",
+        "name": "Extension deployer",
+        "description": "Allows extension developers to deploy simple extensions."
+      }
+    ],
+    "isReadOnly": true
+  },
+  {
+    "name": "Cloud Connector Administrator",
+    "description": "Operate the data transmission tunnels used by the Cloud Connector.",
+    "roleReferences": [
+      {
+        "roleTemplateAppId": "connectivity!z0",
+        "roleTemplateName": "Cloud_Connector_Administrator",
+        "name": "Cloud Connector Administrator",
+        "description": "Operate the data transmission tunnels used by the Cloud connector"
+      }
+    ],
+    "isReadOnly": true
+  },
+  {
+    "name": "Connectivity and Destination Administrator",
+    "description": "Operate the data transmission tunnels used by the Cloud Connector and manage the destination configurations, certificates and subaccount trust.",
+    "roleReferences": [
+      {
+        "roleTemplateAppId": "connectivity!z0",
+        "roleTemplateName": "Cloud_Connector_Administrator",
+        "name": "Cloud Connector Administrator",
+        "description": "Operate the data transmission tunnels used by the Cloud connector"
+      },
+      {
+        "roleTemplateAppId": "destination-xsappname!z02",
+        "roleTemplateName": "Destination_Administrator",
+        "name": "Destination Administrator",
+        "description": "Manage destination configurations, certificates and signing keys for SAML assertions issued by the Destination service"
+      }
+    ],
+    "isReadOnly": true
+  },
+  {
+    "name": "Destination Administrator",
+    "description": "Manage the destination configurations, certificates and subaccount trust.",
+    "roleReferences": [
+      {
+        "roleTemplateAppId": "destination-xsappname!z02",
+        "roleTemplateName": "Destination_Administrator",
+        "name": "Destination Administrator",
+        "description": "Manage destination configurations, certificates and signing keys for SAML assertions issued by the Destination service"
+      }
+    ],
+    "isReadOnly": true
+  },
+  {
+    "name": "Subaccount Administrator",
+    "description": "Administrative access to the subaccount",
+    "roleReferences": [
+      {
+        "roleTemplateAppId": "connectivity!z0",
+        "roleTemplateName": "Cloud_Connector_Administrator",
+        "name": "Cloud Connector Administrator",
+        "description": "Operate the data transmission tunnels used by the Cloud connector"
+      },
+      {
+        "roleTemplateAppId": "destination-xsappname!z02",
+        "roleTemplateName": "Destination_Administrator",
+        "name": "Destination Administrator",
+        "description": "Manage destination configurations, certificates and signing keys for SAML assertions issued by the Destination service"
+      },
+      {
+        "roleTemplateAppId": "cis-local!z0",
+        "roleTemplateName": "Subaccount_Admin",
+        "name": "Subaccount Admin",
+        "description": "Role for subaccount members with read-write authorizations for core commercialization operations, such as viewing subaccount entitlements, and creating and deleting environment instances."
+      },
+      {
+        "roleTemplateAppId": "service-manager!z0476",
+        "roleTemplateName": "Subaccount_Service_Administrator",
+        "name": "Subaccount Service Administrator",
+        "description": "Administrative access to service brokers and environments on a subaccount level."
+      },
+      {
+        "roleTemplateAppId": "xsuaa!z0",
+        "roleTemplateName": "xsuaa_admin",
+        "name": "User and Role Administrator",
+        "description": "Manage authorizations, trusted identity providers, and users."
+      }
+    ],
+    "isReadOnly": true
+  },
+  {
+    "name": "Subaccount Service Administrator",
+    "description": "Administrative access to service brokers and environments on a subaccount level.",
+    "roleReferences": [
+      {
+        "roleTemplateAppId": "service-manager!z0476",
+        "roleTemplateName": "Subaccount_Service_Admin",
+        "name": "Subaccount_Service_Admin",
+        "description": "Administrative access to service brokers and environments on a subaccount level."
+      }
+    ],
+    "isReadOnly": true
+  },
+  {
+    "name": "Subaccount Viewer",
+    "description": "Read-only access to the subaccount",
+    "roleReferences": [
+      {
+        "roleTemplateAppId": "connectivity!z0",
+        "roleTemplateName": "Cloud_Connector_Auditor",
+        "name": "Cloud Connector Auditor",
+        "description": "View the data transmission tunnels used by the Cloud connector to communicate with back-end systems"
+      },
+      {
+        "roleTemplateAppId": "destination-xsappname!z02",
+        "roleTemplateName": "Destination_Viewer",
+        "name": "Destination Viewer",
+        "description": "View destination configurations, certificates and signing keys for SAML assertions issued by the Destination service"
+      },
+      {
+        "roleTemplateAppId": "service-manager!z0476",
+        "roleTemplateName": "Subaccount_Service_Auditor",
+        "name": "Subaccount Service Auditor",
+        "description": "Read-only access to service brokers and environments on a subaccount level."
+      },
+      {
+        "roleTemplateAppId": "cis-local!z0",
+        "roleTemplateName": "Subaccount_Viewer",
+        "name": "Subaccount Viewer",
+        "description": "Role for subaccount members with read-only authorizations for core commercialization operations, such as viewing subaccount entitlements, details of environment instances, and job results."
+      },
+      {
+        "roleTemplateAppId": "xsuaa!z0",
+        "roleTemplateName": "xsuaa_auditor",
+        "name": "User and Role Auditor",
+        "description": "Read-only access for authorizations, trusted identity providers, and users."
+      }
+    ],
+    "isReadOnly": true
+  }
+]
