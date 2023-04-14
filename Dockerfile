@@ -35,22 +35,9 @@ RUN curl \
 # Clean up temp dir
 RUN rm -rf /tmp/*
 
-# Set up non-root user
-ARG USERNAME=user
-ARG UID=1031
-RUN adduser \
-  --uid $UID \
-  --quiet \
-  --disabled-password \
-  --shell /bin/bash \
-  --home /home/$USERNAME \
-  --gecos "Dev User" \
-  $USERNAME \
- && chown $USERNAME:$USERNAME /tmp/
-
-USER $USERNAME
-WORKDIR /home/$USERNAME
-ENV TERM xterm-256color
+WORKDIR /root
 COPY . .
+RUN cat bashrc.add >> /root/.bashrc && rm bashrc.add
+ENV TERM xterm-256color
 
 CMD ["bash"]
