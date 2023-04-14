@@ -183,7 +183,7 @@ The `.` is the identity filter (yes, [that identity mechanism](https://en.wikipe
 
 Here are some more single-line expression examples:
 
-> All of these can be executed with `btp --format json ... | jq ...` but here they're shown as first loading the JSON into files, so we have the files of JSON here in this repo too to try out.
+> All of these can be executed with `btp --format json ... | jq ...` but here they're shown as first saving the JSON into files and then processing those files with `jq`. This is merely so that we have the files of JSON here in this repo too for you to try out.
 
 ```shell
 # How many different available environments do I have at my disposal?
